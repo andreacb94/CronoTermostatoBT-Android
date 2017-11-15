@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText ore =(EditText) findViewById(R.id.ore);
-        final EditText minuti =(EditText) findViewById(R.id.minuti);
+        final EditText ore =(EditText) findViewById(R.id.ore_cd);
+        final EditText minuti =(EditText) findViewById(R.id.minuti_cd);
 
         Button accendi = (Button) findViewById(R.id.accendi);
         Button spegni = (Button) findViewById(R.id.spegni);

@@ -10,45 +10,38 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_margin="10dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Inserisci il tempo di accenzione: "
+            android:text="Accendi per: "
             android:textSize="12dp"
             android:layout_gravity="center"/>
 
         <EditText
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:textSize="16dp"
             android:layout_gravity="center"
-            android:id="@+id/ore"/>
+            android:id="@+id/ore_cd"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=":"
+            android:text=" : "
             android:textSize="16dp"
             android:layout_gravity="center"/>
         <EditText
-            android:layout_width="50dp"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:textSize="16dp"
             android:layout_gravity="center"
-            android:id="@+id/minuti"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="10dp">
-
+            android:id="@+id/minuti_cd"
+            android:layout_marginEnd="10dp"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Accendi"
             android:textSize="16dp"
@@ -57,6 +50,49 @@
 
     </LinearLayout>
 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programma tra: "
+        android:textSize="12dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/ore_tm"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" : "
+        android:textSize="16dp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/minuti_tm"
+        android:layout_marginEnd="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Programmma"
+        android:textSize="16dp"
+        android:id="@+id/programma"
+        android:background="@color/colorAccendi"/>
+
+</LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,7 +101,7 @@
         android:layout_margin="10dp">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Spegni"
             android:textSize="16dp"
@@ -86,6 +122,28 @@
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:id="@+id/countdown"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="11dp"
+            android:hint="Powered by Andrea Petrella"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="9dp"
+            android:hint="Web and Mobile Developer"/>
 
     </LinearLayout>
 
